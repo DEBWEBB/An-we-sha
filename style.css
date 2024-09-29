@@ -89,3 +89,10 @@ p {
 @media (hover: none) {
   /* Use touch-based interactions here */
 }
+/* Hover effect CSS */
+.hover-effect {
+  background-color: rgba(255, 255, 0, 0.5); /* Slight background color change */
+  transform: scale(1.05); /* Slight scaling */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Add shadow to simulate hover */
+}
+
