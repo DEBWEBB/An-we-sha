@@ -87,3 +87,18 @@ papers.forEach(paper => {
   const p = new Paper();
   p.init(paper);
 });
+
+
+// CSS class to simulate hover effect
+const hoverClass = 'hover-effect';
+
+// Add hover-like effect on touchstart and remove on touchend
+papers.forEach(paper => {
+  paper.addEventListener('touchstart', () => {
+    paper.classList.add(hoverClass);
+  });
+
+  paper.addEventListener('touchend', () => {
+    paper.classList.remove(hoverClass);
+  });
+});
